@@ -28,6 +28,59 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      
+      <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('micalendario');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          eventColor: 'purple',
+          events:
+          [
+            {
+              title: 'The Title XDD',
+              start: '2023-04-03',
+              end: '2023-04-05',
+              color: 'red'
+            },
+            {
+              title: 'Nombre 2',
+              start: '2023-04-07',
+              end: '2023-04-07',
+              color: 'green'
+            },
+            {
+              title: 'The Title XDD',
+              start: '2023-05-03',
+              end: '2023-05-05',
+              color: 'red'
+            },
+            {
+              title: 'Nombre 2',
+              start: '2023-05-07',
+              end: '2023-05-07',
+              color: 'green'
+            },
+            {
+              title: 'The Title XDD',
+              start: '2023-06-03',
+              end: '2023-04-05',
+              color: 'red'
+            },
+            {
+              title: 'Nombre 2',
+              start: '2023-06-07',
+              end: '2023-04-07',
+              color: 'green'
+            }
+          ]
+        });
+        calendar.render();
+      });
+
+    </script>
     </head>
     <body>
       <!-- header section start -->
@@ -105,26 +158,18 @@
         </nav>
       </div>
       <!-- header section end -->
-      <!-- care section start -->
-      <div class="care_section layout_padding">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image_3" href="#"><img src="images/img-3.png"></div>
-            </div>
-            <div class="col-md-6">
-              <div class="care_taital">
-                <h4 class="finest_text">Finest Patient</h4>
-                <h1 class="care_text">Care & Amenities</h1>
-                <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                <div class="read_bt_2"><a href="#">Read More</a></div>
-              </div>
-            </div>
+      <!-- calendar section start -->
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-6">
+            <div id='micalendario'></div>
           </div>
+          
         </div>
       </div>
-      <!-- care section end -->
-      <!-- footer section start -->
+      
+      <!-- calendar section end -->
+     <!-- footer section start -->
       <!-- info section -->
     <div class="info_section layout_padding">
       <div class="container ">
@@ -133,175 +178,62 @@
           <div class="row">
             <div class="col-md-4">
               <div class="d-flex">
-                <h5>
-                  Medical Care
-                </h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30264.840567303807!2d-88.31538983286883!3d18.524153436433373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba5ffdd92a793%3A0x5359f881e83e60b2!2sCl%C3%ADnica%20Veterinaria%20Animalis!5e0!3m2!1ses-419!2smx!4v1680409909749!5m2!1ses-419!2smx" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div class="d-flex ">
                 <ul>
-                  <li>
-                    <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-                <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Cancer Oncology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Dental Surgery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Diagnose & Research
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Drug / Medicines
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-4">
               <div class="d-flex">
                 <h5>
-                  The Services
+                  Dirección:
                 </h5>
               </div>
               <div class="d-flex ">
                 <ul>
                   <li>
                     <a href="">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      About Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
+                      Calle Úrsulo Galván #317, entre Av. Chetumal y calle Naranjal, fraccionamiento la esperanza.
                     </a>
                   </li>
                 </ul>
                 <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Cancer Oncology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Dental Surgery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Diagnose & Research
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Drug / Medicines
-                    </a>
-                  </li>
+                
                 </ul>
               </div>
             </div>
             <div class="col-md-4">
               <div class="d-flex">
                 <h5>
-                  Departments
+                  Horarios:
                 </h5>
               </div>
               <div class="d-flex ">
                 <ul>
                   <li>
                     <a href="">
-                      About Us
+                      Lunes a viernes de 9:00 am a 8:30 pm. 
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      About services
+                      Sábados de 9:00 am a 5:30 pm
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      About Departments
+                      Atención de emergencias las 24 horas
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Contact Us
+                      7 días de la semana.
                     </a>
                   </li>
                 </ul>
                 <ul class="ml-3 ml-md-5">
-                  <li>
-                    <a href="">
-                      Cancer Oncology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Dental Surgery
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Diagnose & Research
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Drug / Medicines
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -324,19 +256,6 @@
             </a>
           </div>
           <div class="form_container mt-5">
-            <form action="">
-              <label for="subscribeMail">
-                Newsletter
-              </label>
-              <input
-                type="email"
-                placeholder="Enter Your email"
-                id="subscribeMail"
-              />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
         </div>
@@ -344,14 +263,6 @@
     </div>
     <!-- end info section -->
     <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-      <div class="container">
-        <p class="copyright">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
-      </div>
-    </div>
-    <!-- copyright section end -->
-      <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

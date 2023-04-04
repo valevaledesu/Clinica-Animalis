@@ -253,8 +253,8 @@ button {
     max-height: 100px;
 }
 
-img.logo_main {
-     max-width: 80%;
+.logo_main img {
+     max-height: 250px;
  }
 .banner_section{
      width: 100%;
@@ -303,10 +303,52 @@ img.logo_main {
 .long_text{
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     margin-left: 0px;
 }
+.long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
+ .long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
+ .long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
+ .long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
+ .long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
+ .long_text{
+     width: 100%;
+     float: left;
+     font-size: 16px;
+     color: #ffffff;
+     margin-left: 0px;
+ }
 .btn_main {
     width: 100%;
     float: left;
@@ -314,6 +356,7 @@ img.logo_main {
 }
 .about_us{
      width: 45%;
+     background-image: url(../images/cuyo.jpg);
      float: left;
 }
 .about_us a{
@@ -495,13 +538,21 @@ img.logo_main {
     background-color: #5e5f64;
     height: auto;
     padding: 40px 20px 20px 20px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2) ;
+    transition: all 400ms ease;
+}
+.call_box:hover{
+ box-shadow: 5px 5px 20px rgba(0, 0, 0, .4) ;
+ transform: translateY(-3%);
+ 
 }
 .call_box:hover{
      background-color: #09d066;
 }
 .vision_image{
      width: 50%;
-     float: left;
+     float: lc;
      text-align: center;
 }
 .emergency_text{
@@ -805,7 +856,7 @@ img.logo_main {
 
 @media (min-width: 768px) {
 
-  .mobile_header { display: none !important; }
+  .mobile_header { display: flex }
   .destop_header { display: block; }
 
 } 

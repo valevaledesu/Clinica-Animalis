@@ -131,6 +131,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    ∫
     
     .titlepage h2::after {width: 58%;}
     .about-box .titlepage h2::after {
