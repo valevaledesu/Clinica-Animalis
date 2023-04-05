@@ -860,17 +860,29 @@ button {
 
   .mobile_header { display: flex }
   .destop_header { display: block; }
+}
 
-} 
+@media (min-width: 992px) {
+     .logonav {
+        position: absolute;
+        z-index: 1;
+        left: 10px;
+        top: 0px;
+        width: 150px;
+        display: block!important;
+      }
+   } 
 
 
 @media (max-width: 767px) {
 
-  .destop_header{ display: none; }
-  .mobile_header { display: block; }
+  .destop_header{ display: block; }
+  .mobile_header { display: block!important; }
 
 }
-.mobile_header{ display: none; }
+
+.destop_header{ display: block!important; }
+.mobile_header{ display: block; }
 
 header{
      background-color: #ffffff;
@@ -881,7 +893,7 @@ header{
      left: 10px;
      top: 0px;
      width: 150px;
-     
+     display: none;
    }
  
  .azul{
