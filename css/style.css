@@ -282,15 +282,14 @@ button {
      background-color: #0cd268;
 }
 .banner_img {
-    width: 111%;
-    float: left;
+    width: 120%;
     position: relative;
     left: -72px;
     z-index: -2;
     background-image: url(../images/alex2ratiosize.jpeg);
     height: 660px;
     background-size: auto 100%;
-    background-repeat: no-repeat cover;
+    background-repeat:repeat cover;
     background-position: right;
 }
 .banner_taital {
@@ -380,7 +379,7 @@ button {
      width: 100%;
      float: left;
      font-size: 18px;
-     background-color: #303036;
+     background-color: #122432;
      color: #ffffff;
      padding: 10px 0px;
      text-align: center;
@@ -391,21 +390,21 @@ button {
      color: #303036;
 }
 #main_slider .carousel-control-prev:hover, #main_slider .carousel-control-next:hover, #main_slider .carousel-control-prev:focus, #main_slider .carousel-control-next:focus {
-    background: #052243;
+    background: #122432;
     color: #fff;
 }
 #main_slider a.carousel-control-next {
     position: absolute;
     left: 87%;
     top: 88%;
-    background-color: #052243;
+    background-color: #122432;
     color: #ffffff;
 }
 #main_slider a.carousel-control-prev {
     position: absolute;
     left: 87%;
     top: 77%;
-    background-color: #052243;
+    background-color: #122432;
     color: #ffffff;
 }
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
@@ -426,7 +425,7 @@ button {
      width: 100%;
      float: left;
      font-size: 20px;
-     color: #09d066; 
+     color: #79c61c; 
 }
 .highest_text{
      width: 100%;
@@ -448,14 +447,14 @@ button {
 }
 
 .read_bt{
-     width: 35%;
+     width: 45%;
      float: left;
 }
 .read_bt a{
      width: 100%;
      float: left;
      font-size: 18px;
-     background-color: #09d066;
+     background-color: #79c61c;
      color: #ffffff;
      padding: 10px 0px;
      text-align: center;
@@ -517,7 +516,7 @@ button {
      width: 100%;
      float: left;
      font-size: 18px;
-     background-color: #09d066;
+     background-color: #79c61c;
      color: #ffffff;
      padding: 10px 0px;
      text-align: center;
@@ -548,7 +547,7 @@ button {
  
 }
 .call_box:hover{
-     background-color: #09d066;
+     background-color: #79c61c;
 }
 .vision_image{
      width: 50%;
@@ -581,7 +580,7 @@ button {
      margin-left: 0px;
 }
 .call_box.active{
-     background-color: #09d066;
+     background-color: #79c61c;
 }
 .doctor_section{
      width: 100%;
@@ -600,7 +599,7 @@ button {
 .contact_section{
      width: 100%;
      float: left;
-     background-color: #09d066;
+     background-color: #79c61c;
      padding-bottom: 90px;
 }
 .email-bt {
@@ -697,7 +696,7 @@ button {
 .appointment_section {
     width: 100%;
     float: left;
-    background-color: #09d066;
+    background-color: #79c61c;
     border-top: 2px solid #0aaa54;
     padding-bottom: 50px;
 }
@@ -835,7 +834,7 @@ button {
     color: #000;
 }
 .copyright a:hover{
-    color: #09d066;
+    color: #79c61c;
 }
 
 .blog_text{
@@ -851,7 +850,10 @@ button {
      padding-bottom: 90px; 
 }
   
-
+.padding_top_0{
+     padding-top: 20px; 
+}
+  
 
 
 @media (min-width: 768px) {
@@ -869,4 +871,36 @@ button {
 
 }
 .mobile_header{ display: none; }
+
+header{
+     background-color: #ffffff;
+ }
+ .logonav {
+     position: absolute;
+     z-index: 1;
+     left: 10px;
+     top: 0px;
+     width: 150px;
+     
+   }
+ 
+ .azul{
+     background-color: #122432;
+ }
+ .blanco{
+  background-color: #ffffff;
+}
+
+ .navbar-nav {
+     margin-left: auto;
+}
+
+.verde{
+     background-color: #79c61c;
+ }
+
+
+
+ 
+
 
